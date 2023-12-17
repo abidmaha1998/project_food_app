@@ -1,0 +1,245 @@
+{
+  "food": [
+    {
+      "id": 1,
+      "name": "Pizza Pepperoni",
+      "price": 10,
+      "imageUrl": "https://www.southernliving.com/thmb/j_6gABRIAMegN6RFHxOgbUqBxjA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/2652401_QFSSL_SupremePizza_00072-d910a935ba7d448e8c7545a963ed7101.jpg",
+      "category": "Seafood"
+    },
+    {
+      "id": 3,
+      "price": 300,
+      "name": "Plat",
+      "favourite": true,
+      "star": "2.5",
+      "tags": [
+        "Breakfast",
+        "Idly",
+        "Dinner"
+      ],
+      "imageUrl": "https://i.imgur.com/D5jT09B.jpg",
+      "cookTime": "10 - 15",
+      "origins": [
+        "Indian"
+      ],
+      "category": "Seafood"
+    },
+    {
+      "id": 5,
+      "price": 25,
+      "name": "Plat1",
+      "favourite": false,
+      "star": "4.8",
+      "tags": [
+        "Burger",
+        "Lunch",
+        "Dinner"
+      ],
+      "imageUrl": "https://i.imgur.com/dEzP7RJ.png",
+      "cookTime": "15 - 25",
+      "origins": [
+        "U.S",
+        "UK"
+      ],
+      "category": "Seafood"
+    },
+    {
+      "id": 6,
+      "name": "Plat2",
+      "price": 12,
+      "imageUrl": "https://i.imgur.com/EafbnFW.png",
+      "category": "Seafood"
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2021/02/05/Baked-Feta-Pasta-4_s4x3.jpg.rend.hgtvcom.1280.720.suffix/1615916524567.jpeg",
+      "name": "Pasta",
+      "price": 20
+    },
+    {
+      "name": "Plat3",
+      "price": 844,
+      "imageUrl": "https://i.imgur.com/dEzP7RJ.png",
+      "id": 8
+    },
+    {
+      "name": "Plat4",
+      "price": 985,
+      "imageUrl": "https://i.imgur.com/PIZeuTN.jpg",
+      "id": 9
+    },
+    {
+      "name": "Pizza Cheese",
+      "price": 30,
+      "imageUrl": "https://i.imgur.com/Fk7IsIY.jpg",
+      "id": 10,
+      "category": "Pizza"
+    },
+    {
+      "name": "Burger",
+      "price": 481,
+      "imageUrl": "https://i.imgur.com/3Hxcayb.jpg",
+      "id": 12,
+      "category": "burger"
+    },
+    {
+      "name": "Plat5",
+      "price": 436,
+      "imageUrl": "https://i.imgur.com/aFEKHjz.png",
+      "id": 14,
+      "category": "Plat"
+    },
+    {
+      "name": "Pizza",
+      "price": 30,
+      "imageUrl": "https://i.imgur.com/ptXs0Nx.png",
+      "id": 15,
+      "category": "Pizza"
+    }
+  ],
+  "tags": [
+    {
+      "name": "All",
+      "count": 8
+    },
+    {
+      "name": "FastFood",
+      "count": 3
+    },
+    {
+      "name": "Breakfast",
+      "count": 4
+    },
+    {
+      "name": "Dinner",
+      "count": 3
+    },
+    {
+      "name": "Lunch",
+      "count": 3
+    },
+    {
+      "name": "Idly",
+      "count": 1
+    },
+    {
+      "name": "toast",
+      "count": 1
+    },
+    {
+      "name": "Dosa",
+      "count": 0
+    },
+    {
+      "name": "Burger",
+      "count": 1
+    }
+  ],
+  "userAcc": [
+    {
+      "key": 1,
+      "name": "Maha Abid",
+      "email": "abidmaha@gmail.com",
+      "password": "202cb962ac59075b964b07152d234b70",
+      "role": "Admin",
+      "id": 1
+    },
+    {
+      "key": 2,
+      "name": "Omar Boudawara",
+      "email": "omar@gmail.com",
+      "password": "202cb962ac59075b964b07152d234b70",
+      "role": "User",
+      "id": 2
+    },
+    {
+      "key": 3,
+      "name": "mahmoud",
+      "email": "mahmoud@gmail.com",
+      "password": "202cb962ac59075b964b07152d234b70",
+      "role": "User",
+      "id": 3
+    },
+    {
+      "key": 4,
+      "name": "malek",
+      "email": "malek@gmail.com",
+      "password": "202cb962ac59075b964b07152d234b70",
+      "role": "User",
+      "id": 4
+    }
+  ],
+  "Orders": [
+    {
+      "cartItem": [
+        {
+          "food": {
+            "id": 1,
+            "name": "Pizza Pepperoni",
+            "price": 10,
+            "imageUrl": "https://www.southernliving.com/thmb/j_6gABRIAMegN6RFHxOgbUqBxjA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/2652401_QFSSL_SupremePizza_00072-d910a935ba7d448e8c7545a963ed7101.jpg",
+            "category": "Seafood"
+          },
+          "quantity": 3,
+          "price": 30
+        }
+      ],
+      "customer": {
+        "customerName": "Omar Boudawara",
+        "customerEmail": "omar@gmail.com",
+        "customerAddress": "Sfax"
+      },
+      "payment": "COD",
+      "showChild": false,
+      "total": 30,
+      "id": 1702755164
+    },
+    {
+      "cartItem": [
+        {
+          "food": {
+            "id": 5,
+            "price": 25,
+            "name": "Plat1",
+            "favourite": false,
+            "star": "4.8",
+            "tags": [
+              "Burger",
+              "Lunch",
+              "Dinner"
+            ],
+            "imageUrl": "https://i.imgur.com/dEzP7RJ.png",
+            "cookTime": "15 - 25",
+            "origins": [
+              "U.S",
+              "UK"
+            ],
+            "category": "Seafood"
+          },
+          "quantity": 3,
+          "price": 75
+        }
+      ],
+      "customer": {
+        "customerName": "Mahmoud",
+        "customerEmail": "mahmoud@gmail.com",
+        "customerAddress": "Tunis"
+      },
+      "payment": "Debit card",
+      "showChild": false,
+      "total": 75,
+      "id": 1702764520
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

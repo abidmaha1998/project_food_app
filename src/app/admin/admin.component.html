@@ -1,0 +1,77 @@
+<div class="div_container">
+  <div class="header">
+    <button class="card-link" (click)="openAddPopup()">Open Add Popup</button>
+  </div>
+
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-3" *ngFor="let item of menusItem">
+        <div class="mycard card mb-3">
+          <img [src]="item.imageUrl" class="card-img-top" alt="Dish Image" />
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text">Price - {{ item.price }}</p>
+            <button class="card-link" (click)="showEditPopupFun(item.id)">Edit</button>
+            <button class="card-link" (click)="deleteDish(item.id)">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="edit-popup" *ngIf="showEditPopup">
+    <form (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+      <h2>Edit Dish</h2>
+      <div id="id_field">
+        <label for="edit-id">Id:</label>
+        <input type="number" id="edit-id" name="id" [(ngModel)]="selectedItem.id" placeholder="Enter Id" />
+      </div>
+      <div>
+        <label for="edit-name">Name:</label>
+        <input type="text" id="edit-name" name="name" [(ngModel)]="selectedItem.name" placeholder="Enter Name" />
+      </div>
+      <div>
+        <label for="edit-category">Category:</label>
+        <input type="text" id="edit-category" name="category" [(ngModel)]="selectedItem.category"
+          placeholder="Enter Category" />
+      </div>
+      <div>
+        <label for="edit-price">Price:</label>
+        <input type="number" id="edit-price" name="price" [(ngModel)]="selectedItem.price" placeholder="Enter Price" />
+      </div>
+      <div>
+        <label for="edit-image">Image-Url:</label>
+        <input type="text" id="edit-image" name="image" [(ngModel)]="newImageUrl" placeholder="Enter Image-Url" />
+      </div>
+      <div>
+        <button type="submit">Save</button>
+        <button (click)="closeEditPopup()">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="edit-popup" *ngIf="showAddPopup">
+    <form [formGroup]="addDishForm">
+      <div>
+        <label for="add-name">Name:</label>
+        <input type="text" id="add-name" class="form-control shadow-none" formControlName="name" />
+      </div>
+      <div>
+        <label for="add-price">Price:</label>
+        <input type="number" id="add-price" class="form-control shadow-none" formControlName="price" />
+      </div>
+      <div>
+        <label for="add-imageUrl">Image URL:</label>
+        <input type="text" id="add-imageUrl" class="form-control shadow-none" formControlName="imageUrl" />
+      </div>
+      <div class="space">
+        <button class="btn btn-secondary bg-gradient mt-2 shadow-sm mb-2" (click)="addDish()">
+          Add
+        </button>
+        <button class="btn btn-secondary bg-gradient mt-2 shadow-sm mb-2" (click)="closeAddPopup()">
+          Cancel
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

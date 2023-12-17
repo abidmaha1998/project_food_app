@@ -1,0 +1,8 @@
+<ul class="filters_menu">
+  <li id="tagName" routerLink="/tag/{{ tag.name }}" class="btn btn-secondary mt-2 me-3 " *ngFor="let tag of tags"
+    style="text-transform: capitalize">
+    {{ tag.name }}
+    <span id="tagCount" class="badge text-bg-primary">{{ tag.count }}
+    </span>
+  </li>
+</ul>

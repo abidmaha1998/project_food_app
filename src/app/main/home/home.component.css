@@ -1,0 +1,101 @@
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li a {
+  height: 17rem;
+  width: 15rem;
+  border: 1px solid whitesmoke;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column !important;
+  overflow: hidden;
+  color: black;
+}
+
+li a img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+div.product-name_like span.fav {
+  color: red;
+  font-size: 2rem;
+}
+
+div.product-name_like span.not-fav {
+  color: rgb(160, 160, 160);
+  font-size: 2rem;
+}
+
+
+.food_section {
+  background-color: #f8f9fa;
+}
+
+.filters-content {
+  margin-top: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 2rem;
+}
+
+.box {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.box>div {
+  padding: 15px;
+}
+
+.img-box img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.detail-box h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.detail-box .float-end {
+  font-size: 1.5rem;
+  color: #ff0000;
+}
+
+.star-rating {
+  margin-top: 0.5rem;
+}
+
+.product-footer {
+  margin-top: 1rem;
+}
+
+.product-footer span {
+  display: inline-block;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+.product-footer span.text-secondary {
+  color: #6c757d;
+}
